@@ -20,7 +20,7 @@ export default function WeatherCard({ name, current, forecast }) {
             Vindur {current.windSpeed} m/s {current.windDir} · {current.precip} mm
           </div>
           <div className="text-xs text-gray-500 mt-0.5">
-            Hitatilfinning {current.feelsLike}°
+            Tilfinning {current.feelsLike}°
           </div>
         </div>
       </div>
