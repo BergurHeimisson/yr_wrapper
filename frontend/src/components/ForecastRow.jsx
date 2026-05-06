@@ -1,6 +1,6 @@
 export default function ForecastRow({ date, high, low, condition }) {
   const d = new Date(date + 'T12:00:00Z')
-  const day = d.toLocaleDateString('en-GB', { weekday: 'short' })
+  const day = d.toLocaleDateString('is', { weekday: 'short' })
 
   return (
     <div className="flex items-center justify-between py-1.5 text-sm">

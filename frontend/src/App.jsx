@@ -40,7 +40,7 @@ export default function App() {
 
         {error && (
           <div className="bg-red-50 border border-red-200 rounded-xl p-4 text-sm text-red-700">
-            Could not load weather data: {error}
+            Gat ekki sótt veðurgögn: {error}
           </div>
         )}
 

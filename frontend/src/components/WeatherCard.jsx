@@ -17,10 +17,10 @@ export default function WeatherCard({ name, current, forecast }) {
         <div className="mt-1 min-w-0">
           <div className="text-sm text-gray-700">{current.condition}</div>
           <div className="text-xs text-gray-500 mt-0.5">
-            Wind {current.windSpeed} m/s {current.windDir} · {current.precip} mm
+            Vindur {current.windSpeed} m/s {current.windDir} · {current.precip} mm
           </div>
           <div className="text-xs text-gray-500 mt-0.5">
-            Feels like {current.feelsLike}°
+            Hitatilfinning {current.feelsLike}°
           </div>
         </div>
       </div>
