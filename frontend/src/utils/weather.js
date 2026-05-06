@@ -71,9 +71,9 @@ export function parseCurrent(timeseries) {
     temp: Math.round(tempC),
     feelsLike: Math.round(windChill(tempC, windMs)),
     condition: next1 ? symbolToLabel(next1.summary.symbol_code) : '—',
-    windSpeed: windMs,
+    windSpeed: Math.round(windMs * 10) / 10,
     windDir: degToCardinal(d.wind_from_direction),
-    precip: next1 ? next1.details.precipitation_amount : 0,
+    precip: next1?.details?.precipitation_amount ?? 0,
   }
 }
 
