@@ -1,6 +1,6 @@
 const SYMBOL_LABELS = {
-  clearsky_day: 'Skýlaust',
-  clearsky_night: 'Skýlaust',
+  clearsky_day: 'Bjart',
+  clearsky_night: 'Bjart',
   fair_day: 'Létt ský',
   fair_night: 'Létt ský',
   partlycloudy_day: 'Skýjað að hluta',
