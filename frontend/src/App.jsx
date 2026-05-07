@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
+import { House } from 'lucide-react'
 import WeatherCard from './components/WeatherCard'
 import { fetchWeather } from './api'
 import { parseCurrent, parseForecast } from './utils/weather'
 
 const LOCATIONS = [
   { name: 'Reykjavík', lat: 64.1355, lon: -21.8954 },
-  { name: 'Vatnsendi', lat: 64.0899, lon: -21.9200 },
+  { name: 'Vatnsendi', lat: 64.5419, lon: -21.5663 },
 ]
 
 export default function App() {
@@ -28,7 +29,12 @@ export default function App() {
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-md mx-auto px-4 py-8">
         <div className="mb-6">
-          <h1 className="text-xl font-bold text-gray-900">Veður</h1>
+          <div className="flex items-center gap-2">
+            <a href="/" aria-label="Home" className="text-gray-500 hover:text-gray-900 transition-colors">
+              <House size={18} />
+            </a>
+            <h1 className="text-xl font-bold text-gray-900">Veður</h1>
+          </div>
           <p className="text-sm text-gray-500">Reykjavík &amp; Vatnsendi</p>
         </div>
 
